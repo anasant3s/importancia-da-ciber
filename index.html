@@ -11,18 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="menu">
-        <div class="menu-container">
-          <h1>Portal Educacional</h1>
-          <nav>
-            <a href="#inicio">Início</a>
-            <a href="login.html">Login</a>
-            <a href="sobre.html">Sobre</a>
-          </nav>
-        </div>
-        <button id="startQuizButton" onclick="startQuiz()">Quiz</button>
-      </header>
-      
+  <header class="menu">
+    <div class="menu-container">
+      <h1>Portal Educacional</h1>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="login.html">Login</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+    </div>
+  </header>
       <main class="conteudo">
        
             <section class="intro">
@@ -112,6 +111,12 @@
                 <div id="emails"></div>
               </section>
             </main>
+            <section class="teste-conhecimentos">
+              <h2>Teste seus conhecimentos</h2>
+              <p>Você está preparado(a) para identificar ameaças cibernéticas? Faça nosso quiz e descubra!</p>
+              <button onclick="startQuiz()">Iniciar Quiz</button>
+            </section>
+            
             
             <script src="js/script.js"></script>
 
